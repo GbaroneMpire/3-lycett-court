@@ -29,7 +29,7 @@
           </span>
 
           <?php if($button): 
-            $link_target = $button['target'] ? $button['target'] : '_self';
+           // $link_target = $button['target'] ? $button['target'] : '_self';
           ?>
               <a href="<?= esc_url($button['url']) ?>" target="<?= esc_attr($link_target) ?>"><?= esc_html($button['title']) ?></a>
           <?php endif; ?>

@@ -16,7 +16,7 @@
         switch ($layout) {
 
           case 'hero':
-            $fields = get_sub_field('lct_index_hero');
+            $fields = get_sub_field('hero_fields');
 
             var_dump($fields);
 

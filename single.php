@@ -12,7 +12,7 @@
           
         <?php 
         
-            $hero = get_field('hero');
+            $hero = get_field('lct_hero');
 
             get_template_part('template-parts/hero', 'index', array(
               $fields => $hero

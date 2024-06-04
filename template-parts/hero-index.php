@@ -8,7 +8,7 @@
 
 <section class="lct-hero">
 
-  <link rel="stylesheet" href="././theme/hero.css">
+  <link rel="stylesheet" href="././theme/css/hero.css">
 
   <div class="container">
     <div class="row">

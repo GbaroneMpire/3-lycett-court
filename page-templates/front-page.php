@@ -5,6 +5,7 @@
     /* Template Name: Front Page */
 ?>
 
+testset
 <main id="main">
   <?php 
     if ( have_rows('lct_index_sections') ):
@@ -16,12 +17,12 @@
         switch ($layout) {
 
           case 'hero':
-            $fields = get_sub_field('lct_hero');
+            $fields = get_sub_field('lct_index_hero');
 
             get_template_part('/template-parts/hero', 'index', array(
               'fields' => $fields
             ));
-            
+
             break;
         }
 

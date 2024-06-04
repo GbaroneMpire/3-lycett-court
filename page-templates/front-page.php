@@ -5,7 +5,6 @@
     /* Template Name: Front Page */
 ?>
 
-testset
 <main id="main">
   <?php 
     if ( have_rows('lct_index_sections') ):

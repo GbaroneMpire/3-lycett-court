@@ -24,24 +24,36 @@
             </figure>
           <?php endif; ?>
     
-          <aside class="lct-hero__text-content position-relative d-flex flex-column">
+          <aside class="lct-hero__text-content position-relative">
+
+              <div class="container lct-smaller">
+
+                <div class="row">
+
+                  <div class="col-sm d-flex flex-column lct-gap-1">
+                    
+                    <span class="lct-hero__subtext display-block text-uppercase">
+                      <?= $fields['subtext']; ?>
+                    </span>
+          
+                    <span class="lct-hero__headline">
+                      <?= $fields['headline']; ?>
+                    </span>
+          
+                    <?php if($button): 
+                      $link_target = $button['target'] ? $button['target'] : '_self';
+                    ?>
+                      <div class="lct-hero__buttons">
+                        <a href="<?= esc_url($button['url']) ?>" target="<?= esc_attr($link_target) ?>"><?= esc_html($button['title']) ?></a>
+                      </div>
+                    <?php endif; ?>
     
-              <span class="lct-hero__subtext display-block">
-                <?= $fields['subtext']; ?>
-              </span>
-    
-              <span>
-                <?= $fields['headline']; ?>
-              </span>
-    
-              <?php if($button): 
-                $link_target = $button['target'] ? $button['target'] : '_self';
-              ?>
-                <div class="lct-hero__buttons">
-                  <a href="<?= esc_url($button['url']) ?>" target="<?= esc_attr($link_target) ?>"><?= esc_html($button['title']) ?></a>
+                  </div>
                 </div>
-              <?php endif; ?>
+
+              </div>
     
+         
           </aside>
           
         </div>

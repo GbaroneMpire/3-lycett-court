@@ -1,5 +1,14 @@
 .lct-hero__content.lct-section {
   height: clamp(200px, 80vw, 720px);
+  color: white;
+}
+
+.lct-hero__headline {
+  font-size: 100%;
+}
+
+.lct-hero__subtext {
+  font-size: 50%;
 }
 
 .lct-hero__text-content {
@@ -9,6 +18,7 @@
   font-size: clamp(20px, 3vw, 100px);
 }
 
-.lct-hero__subtext {
-  font-size: 50%;
+.lct-hero__buttons {
+  font-size: 0;
 }
+

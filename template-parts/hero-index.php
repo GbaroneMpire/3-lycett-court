@@ -1,9 +1,9 @@
 <?php 
 
-  $hero = get_field('lct-hero');
+  $hero = get_field('lct_hero');
 
   var_dump($hero);
-  
+
   $bg = $hero['background_image']['ID'];
   $button = $hero['button'];
 ?>

@@ -12,7 +12,7 @@
 }
 
 .lct-hero__text-content {
-  font-family: 'Poppins';
+  font-family: var(--lct-font-family);
   font-weight: 400;
   padding: .5em;
   font-size: clamp(20px, 3vw, 100px);

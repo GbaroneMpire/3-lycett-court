@@ -8,7 +8,7 @@
 
 <section class="lct-hero">
 
-  <link rel="stylesheet" href="././theme/css/hero.css">
+  <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/theme/css/hero.css">
 
   <div class="container">
     <div class="row">

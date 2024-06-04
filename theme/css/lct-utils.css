@@ -17,3 +17,10 @@
   right: 0;
   bottom: 0;
 }
+
+.lct-btn {
+  display: inline-block;
+  font-size: 1.6rem;
+  background: black;
+  color: white;
+}

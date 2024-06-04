@@ -26,6 +26,10 @@ html {
   font-size: 1.6rem;
 }
 
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, span, a {
+  line-height: 1;
+}
+
 .lct-section {
   height: clamp(200px, 40vw, 720px);
 }

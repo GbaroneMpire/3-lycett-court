@@ -24,13 +24,13 @@
             </figure>
           <?php endif; ?>
     
-          <aside class="lct-hero__text-content position-relative">
+          <aside class="position-relative">
 
               <div class="container lct-smaller">
 
                 <div class="row">
 
-                  <div class="col-sm d-flex flex-column lct-gap-1">
+                  <div class="col-sm d-flex flex-column lct-gap-1 lct-hero__text-content">
                     
                     <span class="lct-hero__subtext display-block text-uppercase">
                       <?= $fields['subtext']; ?>

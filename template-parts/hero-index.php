@@ -44,7 +44,7 @@
                       $link_target = $button['target'] ? $button['target'] : '_self';
                     ?>
                       <div class="lct-hero__buttons">
-                        <a href="<?= esc_url($button['url']) ?>" target="<?= esc_attr($link_target) ?>"><?= esc_html($button['title']) ?></a>
+                        <a href="<?= esc_url($button['url']) ?>" target="<?= esc_attr($link_target) ?>" class="lct-button"><?= esc_html($button['title']) ?></a>
                       </div>
                     <?php endif; ?>
     

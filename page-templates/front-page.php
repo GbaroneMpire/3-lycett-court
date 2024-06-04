@@ -14,13 +14,19 @@
         $layout = get_row_layout();
 
         switch ($layout) {
+
           case 'hero':
-            get_template_part('/template-parts/hero', 'index');
+            $fields = get_sub_field('lct_hero');
+
+            get_template_part('/template-parts/hero', 'index', array(
+              'fields' => $fields
+            ));
+            
             break;
         }
 
       endwhile;
-      
+
     endif;
   ?>
 </main><!-- /.container -->

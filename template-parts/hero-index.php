@@ -1,11 +1,11 @@
 <?php 
 
-  $hero = get_field('lct_hero');
+  extract($args);
 
-  var_dump($hero);
+  var_dump($fields);
 
-  $bg = $hero['background_image']['ID'];
-  $button = $hero['button'];
+  $bg = $fields['background_image']['ID'];
+  $button = $fields['button'];
 ?>
 
 <section class="lct-hero">

@@ -1,0 +1,3 @@
+.sf-section {
+  height: clamp(200px, 40vw, 800px);
+}

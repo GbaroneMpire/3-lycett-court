@@ -13,7 +13,7 @@
 
       <?php if($bg): ?>
         <figure class="lct-hero__background lct-background-cover">
-          <?php wp_get_attachment_image( $bg, 'lct-banner', null, array(
+          <?= wp_get_attachment_image( $bg, 'lct-banner', null, array(
             'class' => 'lct-object-fit'
           )); ?>
         </figure>
@@ -30,7 +30,7 @@
           </span>
 
           <?php if($button): 
-           // $link_target = $button['target'] ? $button['target'] : '_self';
+            $link_target = $button['target'] ? $button['target'] : '_self';
           ?>
               <a href="<?= esc_url($button['url']) ?>" target="<?= esc_attr($link_target) ?>"><?= esc_html($button['title']) ?></a>
           <?php endif; ?>

@@ -24,11 +24,11 @@
       <aside class="lct-hero__text-content">
 
           <span class="lct-hero__subtext display-block">
-            <?= $hero['subtext']; ?>
+            <?= $fields['subtext']; ?>
           </span>
 
           <span>
-            <?= $hero['headline']; ?>
+            <?= $fields['headline']; ?>
           </span>
 
           <?php if($button): 

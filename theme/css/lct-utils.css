@@ -18,9 +18,14 @@
   bottom: 0;
 }
 
+.lct-gap-1 {
+  gap: .5em;
+}
+
 .lct-btn {
   display: inline-block;
   font-size: 1.6rem;
   background: black;
+  padding: 1em 1.3em;
   color: white;
 }

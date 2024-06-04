@@ -16,7 +16,7 @@
         switch ($layout) {
 
           case 'hero':
-            $fields = get_sub_field('hero_fields');
+            $fields = get_sub_field('hero');
 
             var_dump($fields);
 

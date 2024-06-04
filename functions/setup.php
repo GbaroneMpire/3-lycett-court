@@ -25,7 +25,7 @@ function b4st_setup()
 	update_option('large_size_w', 1110); /* internal max-width of col-12 */
 
 	if ( ! isset($content_width) ) {
-		$content_width = 1400;
+		$content_width = 1100;
 	}
 
 	add_theme_support( 'post-formats', array(

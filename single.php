@@ -8,7 +8,17 @@
 
     <div class="col-sm">
       <div id="content" role="main">
-        <?php get_template_part('loops/single-post', get_post_format()); ?>
+
+          
+        <?php 
+        
+            $hero = get_field('hero');
+
+            get_template_part('template-parts/hero', 'index', array(
+              $fields => $hero
+            ));
+
+            get_template_part('loops/single-post', get_post_format()); ?>
       </div><!-- /#content -->
     </div>
 

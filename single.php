@@ -15,7 +15,7 @@
             $hero = get_field('lct_hero');
 
             get_template_part('template-parts/hero', 'index', array(
-              $fields => $hero
+              'fields' => $hero
             ));
 
             get_template_part('loops/single-post', get_post_format()); ?>

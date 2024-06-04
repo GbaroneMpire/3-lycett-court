@@ -18,9 +18,13 @@
           case 'hero':
             $fields = get_sub_field('lct_index_hero');
 
-            get_template_part('/template-parts/hero', 'index', array(
-              'fields' => $fields
-            ));
+            var_dump($fields);
+
+            if ($fields) {
+              get_template_part('/template-parts/hero', 'index', array(
+                'fields' => $fields
+              ));
+            }
 
             break;
         }

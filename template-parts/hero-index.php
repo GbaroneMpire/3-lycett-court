@@ -2,8 +2,6 @@
 
   extract($args);
 
-  var_dump($fields);
-
   $bg = $fields['background_image']['ID'];
   $button = $fields['button'];
 ?>

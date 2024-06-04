@@ -19,6 +19,12 @@ function b4st_enqueues() {
 	wp_register_style('b4st', get_template_directory_uri() . '/theme/css/b4st.css', false, null);
 	wp_enqueue_style('b4st');
 
+	wp_register_style('lct-base', get_template_directory_uri() . '/theme/css/lct-base.css', false, null);
+	wp_enqueue_style('lct-base');
+
+	wp_register_style('lct-utils', get_template_directory_uri() . '/theme/css/lct-utils.css', false, null);
+	wp_enqueue_style('lct-utils');
+
 	// Scripts
 
 	wp_register_script('modernizr', 'https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js', false, '2.8.3', true);

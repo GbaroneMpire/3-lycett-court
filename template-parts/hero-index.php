@@ -7,6 +7,9 @@
 ?>
 
 <section class="lct-hero">
+
+  <link rel="stylesheet" href="././theme/hero.css">
+
   <div class="container">
     <div class="row">
 
@@ -21,7 +24,7 @@
             </figure>
           <?php endif; ?>
     
-          <aside class="lct-hero__text-content position-relative">
+          <aside class="lct-hero__text-content position-relative d-flex flex-column">
     
               <span class="lct-hero__subtext display-block">
                 <?= $fields['subtext']; ?>

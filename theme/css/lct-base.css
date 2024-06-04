@@ -1,5 +1,33 @@
-.sf-section {
-  height: clamp(200px, 40vw, 800px);
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-Regular.woff2') format('woff2'),
+      url('./fonts/Poppins-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-Medium.woff2') format('woff2'),
+      url('./fonts/Poppins-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --lct-font-family: 'Poppins', sans-serif;
+}
+
+html {
+  font-family: var(--lct-font-family);
+  font-size: 1.6rem;
+}
+
+.lct-section {
+  height: clamp(200px, 40vw, 720px);
 }
 
 @media (min-width: 1200px) {
@@ -7,3 +35,4 @@
     max-width: 1400px;
   }
 }
+

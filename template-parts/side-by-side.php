@@ -1,13 +1,13 @@
 <?php 
 /**
- * @param array $field_group | required
+ * @param array $fields | required
  */
 ?>
 
 <?php 
     extract($args);
-    $callouts = $field_group['callouts'];
-    $info_links = $field_group['info_links']
+    $callouts = $fields['callouts'];
+    $info_links = $fields['info_links']
 ?>
 
 <section class="lct-side-by-side">
@@ -21,7 +21,7 @@
         <section class="lct-side-by-side__content-wrapper">
 
           <div class="lct-side-by-side__content">
-            <?= $field_group['content'] ?>  
+            <?= $fields['content'] ?>  
           </div>
 
           <?php if($callouts): ?>
@@ -58,7 +58,7 @@
         </section>
 
         <section class="lct-side-by-side__image">
-          <?= wp_get_attachment_image($field_group['image']['ID'], null, null, array(
+          <?= wp_get_attachment_image($fields['image']['ID'], null, null, array(
             'class' => 'lct-object-fit',
             'loading' => 'lazy'
           )); ?>

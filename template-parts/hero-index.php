@@ -36,7 +36,7 @@
                       <?= $fields['subtext']; ?>
                     </span>
           
-                    <span class="lct-hero__headline">
+                    <span class="lct-hero__headline font-weight-bold">
                       <?= $fields['headline']; ?>
                     </span>
           

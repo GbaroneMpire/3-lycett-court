@@ -15,7 +15,7 @@
 }
 
 .lct-hero__subtext {
-  font-size: max(25%, var(--lct-font-size-body));
+  font-size: max(20%, var(--lct-font-size-body));
 }
 
 .lct-hero__buttons {

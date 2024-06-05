@@ -52,6 +52,7 @@
 
   <section class="lct-side-by-side__image">
     <?= wp_get_attachment_image($field_group['image']['ID'], null, null, array(
+      'class' => 'lct-object-fit',
       'loading' => 'lazy'
     )); ?>
   </section>

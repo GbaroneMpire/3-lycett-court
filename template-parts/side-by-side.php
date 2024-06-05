@@ -7,7 +7,8 @@
 <?php 
     extract($args);
     $callouts = $fields['callouts'];
-    $info_links = $fields['info_links']
+    $info_links = $fields['info_links'];
+    $image = $fields['image'];
 ?>
 
 <section class="lct-side-by-side">
@@ -57,12 +58,15 @@
 
         </section>
 
-        <section class="lct-side-by-side__image">
-          <?= wp_get_attachment_image($fields['image']['ID'], null, null, array(
-            'class' => 'lct-object-fit',
-            'loading' => 'lazy'
-          )); ?>
-        </section>
+        
+        <?php if($image): ?>
+          <section class="lct-side-by-side__image">
+            <?= wp_get_attachment_image($image['ID'], null, null, array(
+              'class' => 'lct-object-fit',
+              'loading' => 'lazy'
+            )); ?>
+          </section>
+        <?php endif; ?>
 
       </div>
     </div>

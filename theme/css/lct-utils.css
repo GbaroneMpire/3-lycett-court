@@ -29,3 +29,12 @@
   padding: 1em 1.3em;
   color: white;
 }
+
+.container.lct-smaller, 
+.container-lg.lct-smaller, 
+.container-md.lct-smaller, 
+.container-sm.lct-smaller, 
+.container-xl.lct-smaller {
+  max-width: 900px !important;
+}
+

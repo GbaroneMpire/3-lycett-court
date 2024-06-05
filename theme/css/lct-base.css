@@ -17,6 +17,15 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Poppins';
+  src: url('Poppins-Bold.woff2') format('woff2'),
+      url('Poppins-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --lct-font-family: 'Poppins', sans-serif;
 }
@@ -30,6 +39,10 @@ html {
   line-height: 1;
 }
 
+figure {
+  margin: 0;
+}
+
 .lct-section {
   height: clamp(200px, 40vw, 720px);
 }
@@ -39,4 +52,3 @@ html {
     max-width: 1400px;
   }
 }
-

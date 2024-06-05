@@ -26,11 +26,6 @@
   font-display: swap;
 }
 
-:root {
-  --lct-font-family: 'Poppins', sans-serif;
-  --lct-font-size-body: 1.4rem;
-}
-
 html {
   font-family: var(--lct-font-family);
   font-weight: 400;

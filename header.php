@@ -5,6 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <?php wp_head(); ?>
+
+  <style>
+    :root {
+      --lct-font-family: 'Poppins', sans-serif;
+      --lct-font-size-body: 1.4rem;
+      --lct-button-background: #FFFFFF;
+      --lct-button-text: #000000;
+    }
+  </style>
 </head>
 
 <body <?php body_class(); ?>>

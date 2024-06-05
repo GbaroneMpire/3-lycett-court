@@ -33,7 +33,7 @@
                   $callout = $callout['callout'];
 
                   get_template_part('template-parts/icon-callout', null, array(
-                    $field => $callout
+                    'fields' => $callout
                   ));
                 }
               ?>

@@ -12,7 +12,7 @@
       while( have_rows('lct_index_sections')) : the_row();
 
         $layout = get_row_layout();
-        $fields = get_sub_field($layout);
+        $fields = get_sub_field('hero');
 
         var_dump($fields);
 

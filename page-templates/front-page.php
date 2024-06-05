@@ -13,28 +13,30 @@
 
         $layout = get_row_layout();
 
-        switch ($layout) {
+        if ($layout == 'hero') {
 
-          case 'hero':
-            $fields = get_sub_field('hero')['lct_hero'];
+          $fields = get_sub_field('hero')['lct_hero'];
 
-            if ($fields) {
-              get_template_part('/template-parts/hero', 'index', array(
-                'fields' => $fields
-              ));
-            }
+          if ($fields) {
+            get_template_part('/template-parts/hero', 'index', array(
+              'fields' => $fields
+            ));
+          }
 
-          break;
+        }
 
-          case 'side-by-side':
-            $field_group = get_sub_field('side-by-side')['lct_side_by_side'];
+        if ($layout == 'side-by-side') {
 
-            if ($field_group) {
-              get_template_part( '/template-parts/side-by-side', null, array(
-                'field_group' => $field_group
-              ));
-            }
-          break;
+
+          $field_group = get_sub_field('side-by-side')['lct_side_by_side'];
+
+          if ($field_group) {
+            get_template_part( '/template-parts/side-by-side', null, array(
+              'field_group' => $field_group
+            ));
+          }
+   
+  
         }
 
       endwhile;

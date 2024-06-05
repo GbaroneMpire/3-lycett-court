@@ -10,8 +10,8 @@
 
   <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/theme/css/hero.css">
 
-  <div class="container">
-    <div class="row">
+  <div class="container p-0">
+    <div class="row no-gutters">
 
       <div class="col-lg">
         <div class="lct-hero__content lct-section position-relative d-flex align-items-center">
@@ -24,7 +24,7 @@
             </figure>
           <?php endif; ?>
     
-          <aside class="position-relative">
+          <aside class="lct-hero__text-container position-relative">
 
               <div class="container lct-smaller">
 

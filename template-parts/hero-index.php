@@ -10,7 +10,7 @@
 
   <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/theme/css/hero.css">
 
-  <div class="container p-0">
+  <div class="container-xl p-0">
     <div class="row no-gutters">
 
       <div class="col-lg">

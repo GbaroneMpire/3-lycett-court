@@ -16,7 +16,7 @@
 
   <?php if($icon_handle): ?>
     <figure class="lct-callout__icon">
-      <i class="fa-solid fa-<?= $icon_handle ?>"></i>
+      <i class="fas fa-<?= $icon_handle ?>"></i>
     </figure>
   <?php endif; ?>
 

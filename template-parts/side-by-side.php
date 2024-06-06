@@ -28,15 +28,16 @@
           <?php if($callouts): ?>
             <section class="lct-side-by-side__callout-items">
               <?php 
+
+                var_dump($callouts);
+                
                 foreach ($callouts as $callout) {
 
                   $callout = $callout['callout'];
 
-                  var_dump($callout);
-
-                  get_template_part('template-parts/icon-callout', null, array(
-                    'fields' => $callout
-                  ));
+                  // get_template_part('template-parts/icon-callout', null, array(
+                  //   'fields' => $callout
+                  // ));
                 }
               ?>
             </section>

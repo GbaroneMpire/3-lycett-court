@@ -8,6 +8,7 @@
 
   <style>
     :root {
+      --lct-html-scale: 62.5%;
       --lct-font-family: 'Poppins', sans-serif;
       --lct-font-size-body: 1.4rem;
       --lct-button-background: #FFFFFF;

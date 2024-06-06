@@ -27,12 +27,21 @@
 }
 
 html {
+  font-size: calc(var(--lct-html-scale) / 2);
+}
+
+body {
+  font-size:var(--lct-font-size-body);
   font-family: var(--lct-font-family);
   font-weight: 400;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, span, a {
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, span, a, .lct-main-heading {
   line-height: 1;
+}
+
+h1, .lct-main-heading {
+  font-size: calc(var(--lct-font-size-body) * 3.2);
 }
 
 figure {
@@ -41,6 +50,18 @@ figure {
 
 .lct-section {
   height: clamp(200px, 40vw, 720px);
+}
+
+@media (min-width: 600px) {
+  html {
+    font-size: calc(var(--lct-html-scale) / 1.4);
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: var(--lct-html-scale);
+  }
 }
 
 @media (min-width: 1200px) {

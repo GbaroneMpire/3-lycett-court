@@ -25,9 +25,9 @@
 .lct-button {
   display: inline-block;
   font-size: 1.6rem;
-  background: white;
+  background: var(--lct-button-background);
   padding: 1em 1.3em;
-  color: white;
+  color: var(--lct-button-text);
 }
 
 .container.lct-smaller, 

@@ -15,7 +15,7 @@
 
   <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/theme/css/side-by-side.css">
 
-  <div class="container-md">
+  <div class="container-md lct-smaller">
 
     <div class="row">
 
@@ -27,7 +27,7 @@
           </div>
   
           <?php if($callouts): ?>
-            <section class="lct-side-by-side__callout-items">
+            <section class="lct-side-by-side__callout-items pt-4">
               <div class="row">
 
                 <?php 

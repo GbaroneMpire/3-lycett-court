@@ -20,16 +20,14 @@
     </figure>
   <?php endif; ?>
 
-  <div class="lct-callout__text">
-
-    <?php if($main_text): ?>
-      <span class="lct-callout__main-text"><?= $main_text ?><span>
-    <?php endif; ?>
-
+  <div class="lct-callout__text d-flex flex-column lct-gap-1">
     <?php if($sub_text): ?>
       <span class="lct-callout__sub_text"><?= $sub_text ?></span>
     <?php endif; ?>
-    
+
+    <?php if($main_text): ?>
+      <span class="lct-callout__main-text"><?= $main_text ?></span>
+    <?php endif; ?>
   </div>
     
 </div>

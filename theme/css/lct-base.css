@@ -33,6 +33,7 @@ html {
 body {
   font-size:var(--lct-font-size-body);
   font-family: var(--lct-font-family);
+  color: var( --lct-color-body);
   font-weight: 400;
 }
 
@@ -42,6 +43,7 @@ body {
 
 h1, .lct-main-heading {
   font-size: calc(var(--lct-font-size-body) * 3.2);
+  margin-bottom: .75em;
 }
 
 figure {
@@ -49,7 +51,7 @@ figure {
 }
 
 .lct-section {
-  padding: 5% 0;
+  padding-top: clamp(40px, 7%, 100px);
 }
 
 @media (min-width: 600px) {

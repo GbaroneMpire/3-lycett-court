@@ -13,6 +13,7 @@
       --lct-font-size-body: 1.4rem;
       --lct-button-background: #FFFFFF;
       --lct-button-text: #000000;
+      --lct-color-body: #000000;
     }
   </style>
 </head>

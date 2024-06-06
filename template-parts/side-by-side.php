@@ -13,7 +13,7 @@
 
 <section class="lct-side-by-side lct-section">
 
-  <div class="container-lg">
+  <div class="container-lg lct-smaller">
 
     <div class="row">
 

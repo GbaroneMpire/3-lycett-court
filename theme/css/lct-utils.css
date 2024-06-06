@@ -35,6 +35,15 @@
 .container-md.lct-smaller, 
 .container-sm.lct-smaller, 
 .container-xl.lct-smaller {
+  max-width: 1200px !important;
+}
+
+
+.container.lct-narrow, 
+.container-lg.lct-narrow, 
+.container-md.lct-narrow, 
+.container-sm.lct-narrow, 
+.container-xl.lct-narrow {
   max-width: 900px !important;
 }
 

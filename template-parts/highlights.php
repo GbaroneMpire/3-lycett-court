@@ -28,7 +28,7 @@
 
     <div class="row">
       <div class="col-md">
-        <section class="lct-highlight-slides"  data-flickity='{ "cellAlign": "left", "contain": true, "groupCells": 3, "wrapAround": true }'>
+        <section class="lct-highlight-slides"  data-flickity='{ "groupCells": 3, "wrapAround": true }'>
 
           <?php 
             

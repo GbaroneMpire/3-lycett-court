@@ -25,7 +25,7 @@ function b4st_enqueues() {
 	wp_register_style('lct-utils', get_template_directory_uri() . '/theme/css/lct-utils.css', false, null);
 	wp_enqueue_style('lct-utils');
 
-	wp_register_style('lct-flickity-style', get_template_directory_uri() . 'https://unpkg.com/flickity@2/dist/flickity.min.css', false, '2.0.0', null);
+	wp_register_style('lct-flickity-style', 'https://unpkg.com/flickity@2/dist/flickity.min.css', false, '2.0.0', null);
 	wp_enqueue_style('lct-flickity-style');
 
 	// Scripts

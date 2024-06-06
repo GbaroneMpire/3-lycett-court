@@ -25,7 +25,7 @@
 
     <div class="row">
       <div class="col-md">
-        <section class="lct-highlight-slides" data-flickity>
+        <section class="lct-highlight-slides">
 
           <?php 
             

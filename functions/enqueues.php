@@ -25,6 +25,9 @@ function b4st_enqueues() {
 	wp_register_style('lct-utils', get_template_directory_uri() . '/theme/css/lct-utils.css', false, null);
 	wp_enqueue_style('lct-utils');
 
+	wp_register_style('lct-flickity-style', get_template_directory_uri() . 'https://unpkg.com/flickity@2/dist/flickity.min.css', false, '2.0.0', null);
+	wp_enqueue_style('lct-flickity-style');
+
 	// Scripts
 
 	wp_register_script('modernizr', 'https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js', false, '2.8.3', true);
@@ -35,6 +38,9 @@ function b4st_enqueues() {
 	wp_register_script('bootstrap-bundle', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js', false, '4.3.1', true);
 	wp_enqueue_script('bootstrap-bundle');
 	// (The Bootstrap JS bundle contains Popper JS.)
+
+	wp_register_script('lct-flickity-js', 'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js', false, '2.0.0', true);
+	wp_enqueue_script('lct-flickity-js');
 
 	wp_register_script('b4st', get_template_directory_uri() . '/theme/js/b4st.js', false, null, true);
 	wp_enqueue_script('b4st');

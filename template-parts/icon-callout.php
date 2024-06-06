@@ -12,7 +12,7 @@
   $sub_text = $fields['sub_text'];
 
 ?>
-<div class="lct-callout d-flex lct-gap-1 <?= $fields['layout'] ?>">
+<div class="lct-callout d-flex lct-gap-1 <?= $fields['layout']['value'] ?>">
 
   <?php if($icon_handle): ?>
     <figure class="lct-callout__icon">

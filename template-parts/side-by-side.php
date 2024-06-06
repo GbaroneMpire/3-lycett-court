@@ -29,7 +29,7 @@
             <section class="lct-side-by-side__callout-items">
               <?php 
 
-                lct_test($callouts);
+                lct_test(extract($callouts));
 
                 foreach ($callouts as $callout) {
 

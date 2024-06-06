@@ -61,9 +61,9 @@
 
       
       <?php if($image): ?>
-        <section class="col col-md-6">
+        <section class="col col-md-6 position-relative">
           
-          <div class="lct-side-by-side__image">
+          <div class="lct-side-by-side__image lct-background-cover">
             <?= wp_get_attachment_image($image['ID'], null, null, array(
               'class' => 'lct-object-fit',
               'loading' => 'lazy'

@@ -38,7 +38,7 @@
                 <div class="lct-highlights__slide position-relative">
 
                   <div class="lct-highlight-slide__background lct-background-cover">
-                    <?= wp_get_attachment_image($slide['background-image']['ID'], null, null, array(
+                    <?= wp_get_attachment_image($slide['background_image']['ID'], null, null, array(
                       'class' => 'lct-object-fit'
                     )); ?>
                   </div>

@@ -49,6 +49,10 @@ h1, .lct-main-heading {
   font-size: calc(var(--lct-font-size-body) * 3.2);
 }
 
+h4 {
+  font-size: calc(var(--lct-font-size-body) * 1.4);
+}
+
 figure {
   margin: 0;
 }

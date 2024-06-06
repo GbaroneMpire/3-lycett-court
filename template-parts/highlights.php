@@ -6,8 +6,8 @@
 
 <?php
 
-  $fields = extract($args);
-  $slides = $field['highlight_slides'];
+  extract($args);
+  $slides = $fields['highlight_slides'];
 ?>
 
 <section class="lct-highlights lct-section">

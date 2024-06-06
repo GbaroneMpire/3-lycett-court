@@ -6,3 +6,7 @@
   font-size: 120%;
   color: var(--lct-color-heading);
 }
+
+.lct-side-by-side__image {
+  aspect-ratio: 1 / 1;
+}

@@ -32,6 +32,8 @@
 
                   $callout = $callout['callout'];
 
+                  var_dump($callout);
+
                   get_template_part('template-parts/icon-callout', null, array(
                     'fields' => $callout
                   ));

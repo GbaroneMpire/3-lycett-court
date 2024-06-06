@@ -20,7 +20,7 @@
     </figure>
   <?php endif; ?>
 
-  <div class="lct-callout__text d-flex flex-column lct-gap-1">
+  <div class="lct-callout__text d-flex flex-column lct-gap-1 align-items-center">
     <?php if($sub_text): ?>
       <span class="lct-callout__sub_text"><?= $sub_text ?></span>
     <?php endif; ?>

@@ -33,11 +33,9 @@
 
                   $callout = $callout['callout']['lct_icon_callout'];
 
-                  lct_test($callout);
-
-                  // get_template_part('template-parts/icon-callout', null, array(
-                  //   'fields' => $callout
-                  // ));
+                  get_template_part('template-parts/icon-callout', null, array(
+                    'fields' => $callout
+                  ));
                 }
               ?>
             </section>

@@ -27,7 +27,7 @@
           </div>
   
           <?php if($callouts): ?>
-            <section class="lct-side-by-side__callout-items">
+            <section class="lct-side-by-side__callout-items pt-4">
               <div class="row">
 
                 <?php 

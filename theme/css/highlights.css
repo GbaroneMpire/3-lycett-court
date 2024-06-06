@@ -1,0 +1,20 @@
+.lct-highlights__slide {
+  aspect-ratio: 1 / 1.25;
+}
+
+/* section.lct-highlight-slides {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+} */
+
+.lct-highlight-slide_text-wrapper {
+  background: rgba(255, 255, 255, .85);
+}
+
+.lct-highlight-slide__description {
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  display: -webkit-box;
+}

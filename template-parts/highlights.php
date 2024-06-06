@@ -11,6 +11,9 @@
 ?>
 
 <section class="lct-highlights lct-section">
+
+  <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/theme/css/hightlights.css">
+
   <div class="container-md lct-smaller">
     <div class="row mb-5">
       <div class="col-md-6">
@@ -25,7 +28,7 @@
 
     <div class="row">
       <div class="col-md">
-        <section class="lct-highlight-slides" data-flickity>
+        <section class="lct-highlight-slides"  data-flickity='{ "cellAlign": "left", "contain": true, "groupCells": 3, "wrapAround": true }'>
 
           <?php 
             
@@ -35,7 +38,7 @@
                 
               ?>
 
-                <div class="lct-highlights__slide position-relative">
+                <div class="lct-highlights__slide position-relative d-flex flex-column justify-content-end p-5">
 
                   <div class="lct-highlight-slide__background lct-background-cover">
                     <?= wp_get_attachment_image($slide['background_image']['ID'], null, null, array(
@@ -43,7 +46,7 @@
                     )); ?>
                   </div>
 
-                  <div class="lct-highlight-slide_text-wrapper text-center">
+                  <div class="lct-highlight-slide_text-wrapper text-center position-relative p-5">
 
                     <h4 class="lct-highlight-slide__heading"><?= $slide['heading'] ?></h4>
 

@@ -50,7 +50,7 @@ h1, .lct-main-heading {
 }
 
 h4 {
-  font-size: calc(var(--lct-font-size-body) * 1.4);
+  font-size: calc(var(--lct-font-size-body) * 1.25);
 }
 
 figure {

@@ -22,6 +22,10 @@
   gap: .5em;
 }
 
+.lct-gap-2 {
+  gap: 1em;
+}
+
 .lct-button {
   display: inline-block;
   font-size: 1.6rem;

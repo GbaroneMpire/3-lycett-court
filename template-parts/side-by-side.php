@@ -13,30 +13,41 @@
 
 <section class="lct-side-by-side">
 
-  <div class="container-lg">
+  <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/theme/css/side-by-side.css">
+
+  <div class="container-md">
 
     <div class="row">
 
-      <section class="col col-md-6">
-        <div class="lct-side-by-side__content-wrapper">
+      <section class="col-md-6 pr-md-5">
+        <div class="lct-side-by-side__content-wrapper pr-md-5">
 
-          <div class="lct-side-by-side__content">
+          <div class="lct-side-by-side__content mb-5">
             <?= $fields['content'] ?>  
           </div>
   
           <?php if($callouts): ?>
             <section class="lct-side-by-side__callout-items">
-              <?php 
-  
-                foreach ($callouts as $callout) {
-  
-                  $callout = $callout['callout']['lct_icon_callout'];
-  
-                  get_template_part('template-parts/icon-callout', null, array(
-                    'fields' => $callout
-                  ));
-                }
-              ?>
+              <div class="row">
+
+                <?php 
+                  foreach ($callouts as $callout): 
+                      $callout = $callout['callout']['lct_icon_callout']; 
+                    ?>
+
+                      <div class="col-6">
+
+                        <?php  get_template_part('template-parts/icon-callout', null, array(
+                          'fields' => $callout
+                        )); ?>
+
+                      </div> 
+                      
+                    <?php
+                  endforeach;
+                ?>
+
+              </div>
             </section>
           <?php endif; ?>
   
@@ -61,9 +72,9 @@
 
       
       <?php if($image): ?>
-        <section class="col col-md-6 position-relative">
+        <section class="col-md-6 position-relative">
           
-          <div class="lct-side-by-side__image lct-background-cover">
+          <div class="lct-side-by-side__image lct-background-cover px-md-4">
             <?= wp_get_attachment_image($image['ID'], null, null, array(
               'class' => 'lct-object-fit',
               'loading' => 'lazy'

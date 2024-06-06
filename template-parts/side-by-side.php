@@ -17,53 +17,59 @@
 
     <div class="row">
 
-      <section class="col col-md-6 lct-side-by-side__content-wrapper">
+      <section class="col col-md-6">
+        <div class="lct-side-by-side__content-wrapper">
 
-        <div class="lct-side-by-side__content">
-          <?= $fields['content'] ?>  
-        </div>
-
-        <?php if($callouts): ?>
-          <section class="lct-side-by-side__callout-items">
-            <?php 
-
-              foreach ($callouts as $callout) {
-
-                $callout = $callout['callout']['lct_icon_callout'];
-
-                get_template_part('template-parts/icon-callout', null, array(
-                  'fields' => $callout
-                ));
-              }
-            ?>
-          </section>
-        <?php endif; ?>
-
-        <?php if($info_links): ?>
-          <section class="lct-side-by-side__info_links">
-            <?php foreach ($info_links as $info_link): 
-                $file_source = $info_link['file_source'];
-                $text = $info_link['text'];
+          <div class="lct-side-by-side__content">
+            <?= $fields['content'] ?>  
+          </div>
+  
+          <?php if($callouts): ?>
+            <section class="lct-side-by-side__callout-items">
+              <?php 
+  
+                foreach ($callouts as $callout) {
+  
+                  $callout = $callout['callout']['lct_icon_callout'];
+  
+                  get_template_part('template-parts/icon-callout', null, array(
+                    'fields' => $callout
+                  ));
+                }
               ?>
-
-                <a href="<?= esc_url($file_source['url']) ?>" class="d-flex">
-                  <i class="fa-regular fa-file-pdf"></i>
-                  <span class="lct-info-link__text"><?= $text ?></span>
-                </a>
-            
-            <?php endforeach; ?>
             </section>
-        <?php endif; ?>
+          <?php endif; ?>
+  
+          <?php if($info_links): ?>
+            <section class="lct-side-by-side__info_links">
+              <?php foreach ($info_links as $info_link): 
+                  $file_source = $info_link['file_source'];
+                  $text = $info_link['text'];
+                ?>
+  
+                  <a href="<?= esc_url($file_source['url']) ?>" class="d-flex">
+                    <i class="fa-regular fa-file-pdf"></i>
+                    <span class="lct-info-link__text"><?= $text ?></span>
+                  </a>
+              
+              <?php endforeach; ?>
+              </section>
+          <?php endif; ?>
+        </div>
 
       </section>
 
       
       <?php if($image): ?>
-        <section class="col col-md-6 lct-side-by-side__image">
-          <?= wp_get_attachment_image($image['ID'], null, null, array(
-            'class' => 'lct-object-fit',
-            'loading' => 'lazy'
-          )); ?>
+        <section class="col col-md-6">
+          
+          <div class="lct-side-by-side__image">
+            <?= wp_get_attachment_image($image['ID'], null, null, array(
+              'class' => 'lct-object-fit',
+              'loading' => 'lazy'
+            )); ?>
+          </div>
+
         </section>
       <?php endif; ?>
 

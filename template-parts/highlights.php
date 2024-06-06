@@ -28,7 +28,7 @@
 
     <div class="row">
       <div class="col-md">
-        <section class="lct-highlight-slides"  data-flickity='{ "wrapAround": true }'>
+        <section class="lct-highlight-slides" data-flickity='{ "wrapAround": true }'>
 
           <?php 
             
@@ -38,26 +38,30 @@
                 
               ?>
 
-                <div class="lct-highlights__slide position-relative d-flex flex-column justify-content-end p-5">
+                <div class="lct-highlights__slide">
 
-                  <div class="lct-highlight-slide__background lct-background-cover">
-                    <?= wp_get_attachment_image($slide['background_image']['ID'], null, null, array(
-                      'class' => 'lct-object-fit'
-                    )); ?>
+                  <div class="lct-inner position-relative d-flex flex-column justify-content-end p-5">
+
+                    <div class="lct-highlight-slide__background lct-background-cover">
+                      <?= wp_get_attachment_image($slide['background_image']['ID'], null, null, array(
+                        'class' => 'lct-object-fit'
+                      )); ?>
+                    </div>
+  
+                    <div class="lct-highlight-slide_text-wrapper text-center position-relative p-5">
+  
+                      <h4 class="lct-highlight-slide__heading"><?= $slide['heading'] ?></h4>
+  
+                      <?php if($description): ?>
+                        <div class="lct-highlight-slide__description">
+                          <?= $description ?>
+                        </div>
+                      <?php endif; ?>
+  
+                    </div>
+
                   </div>
-
-                  <div class="lct-highlight-slide_text-wrapper text-center position-relative p-5">
-
-                    <h4 class="lct-highlight-slide__heading"><?= $slide['heading'] ?></h4>
-
-                    <?php if($description): ?>
-                      <div class="lct-highlight-slide__description">
-                        <?= $description ?>
-                      </div>
-                    <?php endif; ?>
-
-                  </div>
-
+                  
                 </div>   
               <?php
             endforeach 

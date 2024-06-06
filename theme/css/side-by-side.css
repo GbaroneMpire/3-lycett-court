@@ -4,4 +4,5 @@
 
 .lct-callout__main-text {
   font-size: 120%;
+  color: var(--lct-color-heading);
 }

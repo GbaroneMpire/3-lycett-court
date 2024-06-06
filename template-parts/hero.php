@@ -20,7 +20,7 @@
     <div class="row no-gutters">
 
       <div class="col-lg">
-        <div class="lct-hero__content lct-section position-relative d-flex align-items-center">
+        <div class="lct-hero__content position-relative d-flex align-items-center">
     
           <?php if($bg): ?>
             <figure class="lct-hero__background lct-background-cover">
@@ -42,7 +42,7 @@
                       <?= $fields['subtext']; ?>
                     </span>
           
-                    <span class="lct-hero__headline font-weight-bold">
+                    <span class="lct-hero__headline">
                       <?= $fields['headline']; ?>
                     </span>
           

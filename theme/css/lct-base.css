@@ -27,7 +27,7 @@
 }
 
 html {
-  font-size: calc(var(--lct-html-scale) / 2);
+  font-size: calc(var(--lct-html-scale) * .8);
 }
 
 body {
@@ -63,7 +63,7 @@ p {
 
 @media (min-width: 600px) {
   html {
-    font-size: calc(var(--lct-html-scale) / 1.4);
+    font-size: calc(var(--lct-html-scale) * .9);
   }
 }
 

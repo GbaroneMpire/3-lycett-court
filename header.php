@@ -10,7 +10,7 @@
     :root {
       --lct-html-scale: 62.5%;
       --lct-font-family: 'Poppins', sans-serif;
-      --lct-font-size-body: 1.4rem;
+      --lct-font-size-body: 1.6rem;
       --lct-button-background: #FFFFFF;
       --lct-button-text: #000000;
       --lct-color-heading: #000000;

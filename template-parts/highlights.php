@@ -12,7 +12,7 @@
 
 <section class="lct-highlights lct-section">
 
-  <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/theme/css/hightlights.css">
+  <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/theme/css/highlights.css">
 
   <div class="container-md lct-smaller">
     <div class="row mb-5">

@@ -12,7 +12,7 @@
   $sub_text = $fields['sub_text'];
 
 ?>
-<div class="lct-callout d-flex <?= $fields['layout']['value'] ?> lct-gap-2 align-items-center">
+<div class="lct-callout d-flex <?= $fields['layout']['value'] ?> lct-gap-2 align-items-center pb-4 border-bottom">
 
   <?php if($icon_handle): ?>
     <figure class="lct-callout__icon">

@@ -1,5 +1,7 @@
 .lct-highlights__slide {
   aspect-ratio: 1 / 1.25;
+  width: 33.3%;
+  margin-right: 10px;
 }
 
 /* section.lct-highlight-slides {

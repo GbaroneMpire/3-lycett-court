@@ -29,8 +29,8 @@
             <section class="lct-side-by-side__callout-items">
               <?php 
 
-                var_dump($callouts);
-                
+                lct_test($callouts);
+
                 foreach ($callouts as $callout) {
 
                   $callout = $callout['callout'];

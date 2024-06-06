@@ -11,7 +11,7 @@
     $image = $fields['image'];
 ?>
 
-<section class="lct-side-by-side">
+<section class="lct-side-by-side lct-section">
 
   <div class="container-lg">
 

@@ -49,7 +49,7 @@ figure {
 }
 
 .lct-section {
-  height: clamp(200px, 40vw, 720px);
+  padding: 5% 0;
 }
 
 @media (min-width: 600px) {

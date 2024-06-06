@@ -31,7 +31,7 @@
 
                 foreach ($callouts as $callout) {
 
-                  $callout = $callout['callout'];
+                  $callout = extract($callout['callout']);
 
                   lct_test($callout);
 

@@ -12,11 +12,11 @@
 
 <section class="lct-highlights lct-section">
   <div class="container-md lct-smaller">
-    <div class="row">
-      <div class="col-md-5">
+    <div class="row mb-5">
+      <div class="col-md-6">
         <h2 class="lct-highlights__heading lct-main-heading"><?= $fields['heading'] ?></h2>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-6">
         <div class="lct-highlights__description">
           <p><?= $fields['description'] ?></p>
         </div>

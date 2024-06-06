@@ -29,11 +29,11 @@
             <section class="lct-side-by-side__callout-items">
               <?php 
 
-                lct_test(extract($callouts));
-
                 foreach ($callouts as $callout) {
 
                   $callout = $callout['callout'];
+
+                  lct_test($callout);
 
                   // get_template_part('template-parts/icon-callout', null, array(
                   //   'fields' => $callout

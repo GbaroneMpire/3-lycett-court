@@ -1,7 +1,11 @@
 .lct-highlights__slide {
   aspect-ratio: 1 / 1.25;
   width: 33.3%;
-  margin-right: 10px;
+  margin-right:max(3%, 30px);
+}
+
+.lct-highlights__slide > .lct-inner {
+  height: 100%;
 }
 
 /* section.lct-highlight-slides {
@@ -17,6 +21,6 @@
 .lct-highlight-slide__description {
   overflow: hidden;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 3;
   display: -webkit-box;
 }

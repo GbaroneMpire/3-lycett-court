@@ -27,7 +27,7 @@
 
                 <?php get_template_part('/template-parts/icon-callout', null, array(
                   'fields' => $callout,
-                  'text_column_direction' => 'flex-column-reverse'
+                  'is_icon_callout_section' => true
                 )); ?>
 
               </div> <?php

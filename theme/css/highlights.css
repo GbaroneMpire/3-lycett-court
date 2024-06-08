@@ -18,7 +18,7 @@
   background: rgba(255, 255, 255, .85);
 }
 
-summary {
+summary p {
   /* overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;

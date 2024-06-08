@@ -11,13 +11,15 @@
   $main_text = $fields['main_text'];
   $sub_text = $fields['sub_text'];
   $column_direction = 'flex-column';
+  $border_class = 'border-bottom';
 
   if (isset($is_icon_callout_section)) {
     $column_direction = 'flex-column-reverse';
+    $border_class = 'border-0';
   }
 
 ?>
-<div class="lct-callout d-flex <?= $fields['layout'] ?> lct-gap-2 align-items-center pb-4 border-bottom <?= $fields['text_align'] ?>">
+<div class="lct-callout d-flex <?= $fields['layout'] ?> lct-gap-2 align-items-center pb-4 <?= $border_class ?> <?= $fields['text_align'] ?>">
 
   <?php if($icon_handle): ?>
     <figure class="lct-callout__icon">

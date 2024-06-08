@@ -7,8 +7,6 @@
 <?php 
 
   extract($args);
-
-  lct_test($fields)
  
 ?>
 
@@ -18,7 +16,7 @@
     <div class="row">
       <div class="col">
         <div class="lct-grid">
-            <h2><?= $fields['headline'] ?></h2>
+            <h2><?= $fields['heading'] ?></h2>
         </div>
       </div>
     </div>
@@ -27,7 +25,7 @@
   <section class="container-md background-dark gallery-section">
     <div class="row">
       <div class="col">
-        <?php get_template_part('template-parts/gallery', null, array(
+        <?php get_template_part('/template-parts/gallery', null, array(
           'fields' => $fields['lct_gallery']
         )); ?>
       </div>

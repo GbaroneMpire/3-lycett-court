@@ -14,6 +14,8 @@
         $layout = get_row_layout();
         $fields = get_sub_field($layout)["lct_{$layout}"];
 
+        var_dump($fields)
+
         if ($fields) {
           get_template_part("/template-parts/{$layout}", null, array(
             'fields' => $fields

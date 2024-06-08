@@ -18,7 +18,7 @@
   background: rgba(255, 255, 255, .85);
 }
 
-.lct-highlight-slide__description {
+.lct-highlight-slide__summary {
   overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;

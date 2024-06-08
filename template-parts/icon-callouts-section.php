@@ -23,7 +23,7 @@
               $callout = $callout['lct_icon_callout'];
             ?>
 
-              <div class="col-6 col-md pb-5">
+              <div class="col-6 col-md-4 col-lg pb-5">
 
                 <?php get_template_part('/template-parts/icon-callout', null, array(
                   'fields' => $callout,

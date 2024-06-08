@@ -12,7 +12,9 @@
   $sub_text = $fields['sub_text'];
   $column_direction = 'flex-column';
 
-  if ($is_icon_callout_section) $column_direction = 'flex-column-reverse';
+  if (isset($is_icon_callout_section)) {
+    $column_direction = 'flex-column-reverse';
+  }
 
 ?>
 <div class="lct-callout d-flex <?= $fields['layout'] ?> lct-gap-2 align-items-center pb-4 border-bottom <?= $fields['text_align'] ?>">

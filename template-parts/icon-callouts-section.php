@@ -19,15 +19,20 @@
     <div class="container-md">
       <div class="row">
         <?php 
-          foreach($callouts as $callout) {
+          foreach($callouts as $callout): 
+          
+              $callout = $callout['lct_icon_callout'];
+            ?>
 
-            $callout = $callout['lct_icon_callout'];
-            
-            get_template_part('/template-parts/icon-callout', null, array(
-              'fields' => $callout
-            ));
-          }
+              <div class="col-md">
 
+                <?php get_template_part('/template-parts/icon-callout', null, array(
+                  'fields' => $callout
+                )); ?>
+
+              </div> <?php
+
+          endforeach;
         ?>  
       </div>
     </div>

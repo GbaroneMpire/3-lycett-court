@@ -19,10 +19,11 @@
 }
 
 summary {
-  overflow: hidden;
+  /* overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
-  display: -webkit-box;
+  display: -webkit-box; */
+  text-transform: uppercase;
 }
 
 @media (min-width: 768px) {

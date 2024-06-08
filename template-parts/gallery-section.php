@@ -22,7 +22,7 @@
     <div class="row">
       <div class="col">
 
-        <div class="container-md lct-smaller px-5">
+        <div class="container-md lct-smaller p-5">
           <div class="row">
             <div class="col">
               <?php get_template_part('/template-parts/gallery', null, array(

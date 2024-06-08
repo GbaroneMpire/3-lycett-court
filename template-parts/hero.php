@@ -32,7 +32,7 @@
     
           <aside class="lct-hero__text-container position-relative">
 
-              <div class="container lct-smaller">
+              <div class="container lct-narrow">
 
                 <div class="row">
 

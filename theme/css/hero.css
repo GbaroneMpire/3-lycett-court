@@ -6,7 +6,6 @@
 .lct-hero__text-content {
   font-family: var(--lct-font-family);
   font-weight: 400;
-  padding: .5em;
   font-size: clamp(45px, 6vw, 80px);
 }
 

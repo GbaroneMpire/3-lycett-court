@@ -55,7 +55,7 @@
                       <?php if($description): ?>
                         <details>
                           <summary class="lct-highlight-slide__summary">
-                            <?= $description ?>
+                            test
                           </summary>
                           <?= $description ?>
                         </details>

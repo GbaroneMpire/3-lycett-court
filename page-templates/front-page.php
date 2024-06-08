@@ -15,8 +15,6 @@
         $fields = get_sub_field($layout)["lct_{$layout}"];
         $component_path = "/template-parts/{$layout}";
 
-        var_dump($component_path);
-
         if ($fields) {
           get_template_part($component_path, null, array(
             'fields' => $fields

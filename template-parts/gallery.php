@@ -7,9 +7,15 @@
 <?php 
 
   extract($args);
- 
-  lct_test($fields);
+  
+  $gallery_group = $fields['lct_gallery'];
+  $gallery = $gallery_group['gallery'];
+  $filters = $gallery_group['filters'];\
+
 ?>
+
+Gallery : <br> <?= lct_test($gallery); ?>
+Filters : <br> <?= lct_test($filters); ?>
 
 
 

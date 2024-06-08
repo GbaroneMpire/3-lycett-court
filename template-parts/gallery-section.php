@@ -4,11 +4,7 @@
  */
 ?>
 
-<?php 
-
-  extract($args);
- 
-?>
+<?php extract($args); ?>
 
 <section class="lct-gallery-section lct-section">
 

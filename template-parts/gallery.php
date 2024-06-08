@@ -5,7 +5,6 @@
 ?>
 
 <?php 
-
   extract($args);
   $filters = $fields['filters'];
   $description = $fields['description'];

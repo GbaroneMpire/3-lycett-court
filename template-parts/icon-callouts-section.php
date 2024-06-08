@@ -14,7 +14,7 @@
 
 <?php if ($callouts): ?>
   
-  <section class="lct-callouts lct-section">
+  <section class="lct-callouts lct-section border-bottom">
     <div class="container-md">
       <div class="row">
         <?php 
@@ -23,7 +23,7 @@
               $callout = $callout['lct_icon_callout'];
             ?>
 
-              <div class="col-md">
+              <div class="col-6 col-md pb-5">
 
                 <?php get_template_part('/template-parts/icon-callout', null, array(
                   'fields' => $callout,

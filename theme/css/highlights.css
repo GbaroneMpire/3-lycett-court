@@ -1,3 +1,7 @@
+.lct-highlights {
+  --arrow-size: 2em;
+}
+
 .lct-highlights__slide {
   aspect-ratio: 1 / 1.25;
   width: 100%;
@@ -26,6 +30,33 @@
 
 .lct-highlight-slide__description > details[open] + .lct-highlight-slide__preview {
   display: none;
+}
+
+.flickity-prev-next-button {
+  height: var(--arrow-size);
+  width: var(--arrow-size);
+  border-radius: 0;
+  outline: 2px solid #efefef;
+  box-shadow: 0 0 10px 0 rgb(0 0 0/10%);
+}
+
+.flickity-prev-next-button > svg {
+  height: .75em !important;
+  width: .75em !important;
+  top: 50% !important;
+  left: 50% !important;
+  right: auto !important;
+  transform: translate(-50%, -50%);
+}
+
+.flickity-prev-next-button.previous {
+  transform: translate(calc(var(--arrow-size) * -1), -50%);
+  left: calc((var(--arrow-size) * -1) * .2);
+}
+
+.flickity-prev-next-button.next {
+  transform: translate(var(--arrow-size), -50%);
+  right: calc(var(--arrow-size) * .2);
 }
 
 @media (min-width: 768px) {

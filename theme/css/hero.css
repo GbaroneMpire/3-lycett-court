@@ -1,5 +1,5 @@
 .lct-hero__content {
-  height: clamp(200px, 80vw, 720px);
+  height: clamp(200px, 80vw, 700px);
   color: white;
 }
 

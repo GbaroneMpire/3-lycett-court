@@ -12,7 +12,6 @@
 
 ?>
 
-
 <?php if ($callouts): ?>
   
   <section class="lct-callouts lct-section">
@@ -27,7 +26,8 @@
               <div class="col-md">
 
                 <?php get_template_part('/template-parts/icon-callout', null, array(
-                  'fields' => $callout
+                  'fields' => $callout,
+                  'text_column_direction' => 'flex-column-reverse'
                 )); ?>
 
               </div> <?php

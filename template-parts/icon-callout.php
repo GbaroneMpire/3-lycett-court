@@ -11,6 +11,8 @@
   $main_text = $fields['main_text'];
   $sub_text = $fields['sub_text'];
 
+  $column_direction = ($text_column_direction) ? $text_column_direction : 'flex-column';
+
 ?>
 <div class="lct-callout d-flex <?= $fields['layout'] ?> lct-gap-2 align-items-center pb-4 border-bottom <?= $fields['text_align'] ?>">
 
@@ -20,7 +22,7 @@
     </figure>
   <?php endif; ?>
 
-  <div class="lct-callout__text d-flex flex-column lct-gap-1">
+  <div class="lct-callout__text d-flex <?= $column_direction ?> lct-gap-1">
     <?php if($sub_text): ?>
       <span class="lct-callout__sub_text"><?= $sub_text ?></span>
     <?php endif; ?>

@@ -14,6 +14,8 @@
       --lct-button-background: #FFFFFF;
       --lct-button-text: #000000;
       --lct-color-heading: #000000;
+
+      --lct-color-bg-accent: #e0d2c9;
     }
   </style>
 </head>

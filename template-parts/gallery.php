@@ -12,10 +12,9 @@
   $gallery = $gallery_group['gallery'];
   $filters = $gallery_group['filters'];
 
-?>
+  var_dump($gallery);
 
-Gallery : <br> <?= lct_test($gallery); ?>
-Filters : <br> <?= lct_test($filters); ?>
+?>
 
 
 

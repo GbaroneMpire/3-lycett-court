@@ -19,10 +19,10 @@
     <div class="container-md">
       <div class="row">
         <?php 
-
-          $callout = $callout['lct_icon_callout'];
-
           foreach($callouts as $callout) {
+
+            $callout = $callout['lct_icon_callout'];
+            
             get_template_part('/template-parts/icon-callout', null, array(
               'fields' => $callout
             ));

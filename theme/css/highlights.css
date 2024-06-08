@@ -8,12 +8,6 @@
   height: 100%;
 }
 
-/* section.lct-highlight-slides {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1em;
-} */
-
 .lct-highlight-slide_text-wrapper {
   background: rgba(255, 255, 255, .85);
 }
@@ -27,6 +21,11 @@
 
 .lct-highlight-slide__summary {
   text-transform: uppercase;
+  margin-top: .75em;
+}
+
+.lct-highlight-slide__description > details[open] + .lct-highlight-slide__preview {
+  display: none;
 }
 
 @media (min-width: 768px) {

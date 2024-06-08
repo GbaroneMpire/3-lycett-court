@@ -53,12 +53,13 @@
                       <h4 class="lct-highlight-slide__heading"><?= $slide['heading'] ?></h4>
   
                       <?php if($description): ?>
-                        <details>
-                          <summary class="lct-highlight-slide__summary">
-                            test
-                          </summary>
-                          <?= $description ?>
-                        </details>
+                        <div class="lct-highlight-slide__description d-flex flex-column-reverse">
+                          <details>
+                            <summary class="lct-highlight-slide__summary">Read More</summary>
+                            <?= $description ?>
+                          </details>
+                          <div class="lct-highlight-slide__preview"><?= $description ?></div>
+                        </div>
                       <?php endif; ?>
   
                     </div>

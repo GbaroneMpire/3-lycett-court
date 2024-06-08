@@ -45,7 +45,7 @@ body {
   margin-bottom: .75em;
 }
 
-h1, .lct-main-heading {
+h1, h2, .lct-main-heading {
   font-size: calc(var(--lct-font-size-body) * 2.8);
 }
 

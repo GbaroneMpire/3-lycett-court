@@ -38,6 +38,22 @@
   color: var(--lct-button-text);
 }
 
+.lct-bg-accent {
+  background-color: var(--lct-color-bg-accent);
+}
+
+.lct-grid {
+  display: grid;
+}
+
+.lct-grid.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.lct-grid.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 @media (min-width: 768px) {
 
   .container.lct-narrow, 

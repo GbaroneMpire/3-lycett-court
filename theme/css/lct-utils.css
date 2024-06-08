@@ -23,6 +23,10 @@
 }
 
 .lct-gap-2 {
+  gap: .75em;
+}
+
+.lct-gap-3 {
   gap: 1em;
 }
 

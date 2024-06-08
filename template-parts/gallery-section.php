@@ -8,11 +8,28 @@
 
   extract($args);
  
-  $gallery_group = $fields['lct_gallery'];
-  $gallery = $gallery_group['gallery'];
-  $filters = $gallery_group['filters'];
 ?>
 
+<section class="lct-gallery-section lct-section">
 
-Gallery : <br> <?= lct_test($gallery) ?>
-Filter : <br> <?= lct_test($filters) ?>
+  <section class="container-md lct-smaller lct-title-section">
+    <div class="row">
+      <div class="col">
+        <div class="lct-grid">
+            <h2><?= $fields['headline'] ?></h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-md background-dark gallery-section">
+    <div class="row">
+      <div class="col">
+        <?php get_template_part('template-parts/gallery', null, array(
+          'fields' => $fields['lct_gallery']
+        )); ?>
+      </div>
+    </div>
+  </section>
+
+</section>

@@ -7,6 +7,8 @@
 <?php 
 
   extract($args);
+
+  lct_test($fields)
  
 ?>
 

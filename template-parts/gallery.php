@@ -8,10 +8,6 @@
 
   extract($args);
   
-  $gallery_group = $fields['lct_gallery'];
-  $gallery = $gallery_group['gallery'];
-  $filters = $gallery_group['filters'];
-
 ?>
 
 

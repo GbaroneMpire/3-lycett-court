@@ -16,7 +16,7 @@
 
   <?php if($filters): ?>
     <section class="lct-filters">
-      <?php foreach($filters as $filters): ?>
+      <?php foreach($filters as $filter): ?>
         <button data-filter=".<?= $filter['value'] ?>"><?= $filter['label'] ?></button>
       <?php endforeach; ?>        
     </section>
@@ -26,7 +26,7 @@
     <section class="lct-gallery__description"><?= $description ?></section>
   <?php endif; ?>
 
-  <?php if($gallery): ?>
+  <?php if($gallery_images): ?>
     <section class="lct-gallery">
       <?php foreach($gallery_images as $image): ?>
           <figure class="lct-gallery-image">

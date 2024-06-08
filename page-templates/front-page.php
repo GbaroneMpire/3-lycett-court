@@ -13,11 +13,12 @@
 
         $layout = get_row_layout();
         $fields = get_sub_field($layout)["lct_{$layout}"];
+        $component_path = "/template-parts/{$layout}";
 
-        lct_test($layout);
+        var_dump($component_path);
 
         if ($fields) {
-          get_template_part("/template-parts/{$layout}", null, array(
+          get_template_part($component_path, null, array(
             'fields' => $fields
           ));
         }

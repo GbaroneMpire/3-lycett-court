@@ -8,5 +8,4 @@
 
   extract($args);
 
-  var_dump($fields)
 ?>

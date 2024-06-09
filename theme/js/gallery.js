@@ -5,7 +5,7 @@
       percentPosition: true,
       masonry: {
         columnWidth: '.grid-sizer',
-        gutter: 5
+        gutter: 20
       }
     }),
     buttonGroup = document.querySelector('.lct-filters'),

@@ -20,7 +20,7 @@
     <section class="lct-filters align-items-start d-flex flex-column lct-gap-2 p-4 p-lg-0">
       <button class="text-white text-uppercase" data-filter="*">All</button>
       <?php foreach($filters as $filter): ?>
-        <button class="text-white text-uppercase" class="lct-filter-button" data-filter=".<?= $filter['value'] ?>"><?= $filter['label'] ?></button>
+        <button class="lct-filter-button text-white text-uppercase" data-filter=".<?= $filter['value'] ?>"><?= $filter['label'] ?></button>
       <?php endforeach; ?>        
     </section>
   <?php endif; ?>

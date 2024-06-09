@@ -2,13 +2,40 @@
   background: none;
   border: none;
   font-size: 1.8rem;
-  padding-bottom: .6em;
+  margin: 0 0 0.6em;
+  position: relative;
+  padding: 0;
+}
+
+.lct-gallery-image {
+  padding-right: 1em;
+  padding-bottom: 1em;
+}
+
+.lct-filters button:before {
+  content: '';
+  position: absolute;
+  top: auto;
+  left: 0;
+  right: 0;
+  bottom: -.35em;
+  height: .15em;
+  background: white;
+  transform: scaleX(0);
+  transition: transform .6s cubic-bezier(1, 0, 0, 1);
+}
+
+.lct-filters button.lct-active:before {
+  transform: scaleX(1);
 }
 
 .lct-gallery-image, .grid-sizer {
   width: 50%;
+}
+
+.lct-gallery-image {
   padding-right: 1em;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
 }
 
 @media only screen and (min-width: 1023px) {

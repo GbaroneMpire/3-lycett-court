@@ -11,7 +11,7 @@
   $gallery_images = $fields['gallery'];
 ?>
 
-<div class="lct-grid grid-4 py-5 lct-gap-3">
+<div class="lct-gallery-grid lct-grid py-5 lct-gap-3">
 
   <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/theme/css/gallery.css">  
 
@@ -28,15 +28,17 @@
   <?php endif; ?>
 
   <?php if($gallery_images): ?>
-    <section class="lct-gallery">
-      <div class="lct-inner lct-gap-3 lct-grid grid-2">
-        <?php foreach($gallery_images as $image): ?>
-            <figure class="lct-gallery-image">
-              <?= wp_get_attachment_image( $image['ID'], null, null, array(
-                'class' => 'lct-object-fit'
-              )); ?>
-            </figure>
-        <?php endforeach ?>
+    <section class="lct-gallery position-relative">
+      <div class="lct-inner lct-gap-3 lct-grid grid-2 position-absolute">
+        <div class="lct-gallery-track">
+          <?php foreach($gallery_images as $image): ?>
+              <figure class="lct-gallery-image">
+                <?= wp_get_attachment_image( $image['ID'], null, null, array(
+                  'class' => 'lct-object-fit'
+                )); ?>
+              </figure>
+          <?php endforeach ?>
+        </div>
       </div>
     </section>
   <?php endif; ?>

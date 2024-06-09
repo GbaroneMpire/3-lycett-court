@@ -38,6 +38,8 @@
     top: 50%;
     right: -10%;
     left: auto;
+    height: 100%;
+    width: 100%;
   }
 
   .lct-gallery .lct-gallery-track {

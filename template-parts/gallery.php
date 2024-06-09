@@ -18,7 +18,7 @@
 
   <?php if($filters): ?>
     <section class="lct-filters align-items-start d-flex flex-column lct-gap-2 p-4 p-lg-0">
-      <button class="text-white text-uppercase" data-filter="*">All</button>
+      <button class="text-white text-uppercase lct-active" data-filter="*">All</button>
       <?php foreach($filters as $filter): ?>
         <button class="lct-filter-button text-white text-uppercase" data-filter=".<?= $filter['value'] ?>"><?= $filter['label'] ?></button>
       <?php endforeach; ?>        
@@ -32,7 +32,7 @@
   <?php if($gallery_images): ?>
     <section class="lct-gallery position-relative">
       <div class="lct-inner d-flex flex-column">
-        <div class="lct-gallery-track lct-gap-3 lct-grid grid-2 w-100 lct-filterable">
+        <div class="lct-gallery-track lct-filterable">
           <div class="grid-sizer"></div>
           <?php foreach($gallery_images as $image): 
               $image_data = lct_get_image_data($image['ID']);

@@ -4,8 +4,7 @@
       itemSelector: '.lct-gallery-image',
       percentPosition: true,
       masonry: {
-        columnWidth: '.grid-sizer',
-        gutter: 20
+        columnWidth: '.grid-sizer'
       }
     }),
     buttonGroup = document.querySelector('.lct-filters'),

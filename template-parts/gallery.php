@@ -40,7 +40,7 @@
               $image_class .= (!empty($image_description)) ? ' ' . $image_description : '';
             
             ?>
-              <figure class="lct-gallery-image<? $image_class ?>">
+              <figure class="lct-gallery-image<?= $image_class ?>">
                 <?= wp_get_attachment_image( $image['ID'], null, null, array(
                   'class' => 'lct-object-fit'
                 )); ?>

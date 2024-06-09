@@ -32,7 +32,11 @@
     <section class="lct-gallery position-relative">
       <div class="lct-inner d-flex flex-column">
         <div class="lct-gallery-track lct-gap-3 lct-grid grid-2 w-100">
-          <?php foreach($gallery_images as $image): ?>
+          <?php foreach($gallery_images as $image): 
+             $image_data = get_post($image['ID']);
+
+             lct_test($image_data);
+            ?>
               <figure class="lct-gallery-image">
                 <?= wp_get_attachment_image( $image['ID'], null, null, array(
                   'class' => 'lct-object-fit'

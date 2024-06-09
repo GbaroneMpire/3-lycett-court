@@ -21,7 +21,8 @@
   transition: transform .6s cubic-bezier(1, 0, 0, 1);
 }
 
-.lct-filters button.lct-active:before {
+.lct-filters button.lct-active:before,
+.lct-filters button:hover:before {
   transform: scaleX(1);
 }
 

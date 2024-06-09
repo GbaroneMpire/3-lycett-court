@@ -17,6 +17,7 @@
   height: .15em;
   background: white;
   transform: scaleX(0);
+  transform-origin: left;
   transition: transform .6s cubic-bezier(1, 0, 0, 1);
 }
 

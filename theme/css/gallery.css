@@ -17,13 +17,14 @@
   height: .15em;
   background: white;
   transform: scaleX(0);
-  transform-origin: left;
+  transform-origin: right;
   transition: transform .6s cubic-bezier(1, 0, 0, 1);
 }
 
 .lct-filters button.lct-active:before,
 .lct-filters button:hover:before {
   transform: scaleX(1);
+  transform-origin: left;
 }
 
 .lct-gallery-image, .grid-sizer {

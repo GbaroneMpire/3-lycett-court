@@ -72,7 +72,7 @@
 
       
       <?php if($image): ?>
-        <section class="col-md-6 position-relative">
+        <section class="col-md-6 position-relative p-0">
           
           <div class="lct-side-by-side__image">
             <?= wp_get_attachment_image($image['ID'], null, null, array(

@@ -14,7 +14,7 @@
 
       if ( !matchesSelector( target, 'button' ) ) return;
 
-      iso.arrange({filter: buttonData});
+      grid.arrange({filter: buttonData});
       target.classList.add('lct-active');
 
     });

@@ -33,6 +33,7 @@
     <section class="lct-gallery position-relative">
       <div class="lct-inner d-flex flex-column">
         <div class="lct-gallery-track lct-gap-3 lct-grid grid-2 w-100 lct-filterable">
+          <div class="grid-sizer"></div>
           <?php foreach($gallery_images as $image): 
               $image_data = lct_get_image_data($image['ID']);
               $image_description = $image_data['description'];

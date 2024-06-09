@@ -7,11 +7,6 @@
   padding: 0;
 }
 
-.lct-gallery-image {
-  padding-right: 1em;
-  padding-bottom: 1em;
-}
-
 .lct-filters button:before {
   content: '';
   position: absolute;

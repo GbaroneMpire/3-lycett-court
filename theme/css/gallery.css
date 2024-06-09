@@ -5,6 +5,10 @@
   padding-bottom: .6em;
 }
 
+.lct-gallery-image {
+  width: 50%;
+}
+
 @media only screen and (min-width: 1023px) {
   
   .lct-gallery-grid {
@@ -38,10 +42,6 @@
 
   .lct-gallery .lct-gallery-track {
     overflow-y: auto;
-  }
-
-  .lct-gallery-image {
-    width: 50%;
   }
 
 }

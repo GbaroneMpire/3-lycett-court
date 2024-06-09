@@ -14,7 +14,7 @@
 <div class="lct-gallery-grid lct-grid py-5 lct-gap-3">
 
   <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/theme/css/gallery.css">  
-  <script defer src="<?= get_template_directory() ?>/theme/js/gallery.js"></script>
+  <script defer src="<?= get_template_directory_uri() ?>/theme/js/gallery.js"></script>
 
   <?php if($filters): ?>
     <section class="lct-filters align-items-start d-flex flex-column lct-gap-2 p-4 p-lg-0">
@@ -33,6 +33,7 @@
     <section class="lct-gallery position-relative">
       <div class="lct-inner d-flex flex-column">
         <div class="lct-gallery-track lct-gap-3 lct-grid grid-2 w-100 lct-filterable">
+          <div class="grid-sizer"></div>
           <?php foreach($gallery_images as $image): 
               $image_data = lct_get_image_data($image['ID']);
               $image_description = $image_data['description'];

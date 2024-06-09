@@ -40,4 +40,8 @@
     overflow-y: auto;
   }
 
+  .lct-gallery-image {
+    width: 50%;
+  }
+
 }

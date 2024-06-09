@@ -46,6 +46,14 @@
   display: grid;
 }
 
+.lct-grid.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.lct-grid.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 @media (min-width: 768px) {
 
   .container.lct-narrow, 
@@ -60,11 +68,11 @@
 
 @media (min-width: 1023px) {
 
-  .lct-grid.grid-2 {
+  .lct-grid.grid-lg-2 {
     grid-template-columns: repeat(2, 1fr);
   }
   
-  .lct-grid.grid-4 {
+  .lct-grid.grid-lg-4 {
     grid-template-columns: repeat(4, 1fr);
   }
 }

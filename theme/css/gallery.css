@@ -5,7 +5,7 @@
   padding-bottom: .6em;
 }
 
-.lct-gallery-image {
+.lct-gallery-image, .grid-sizer {
   width: 50%;
 }
 

@@ -8,7 +8,7 @@
 
 <section class="lct-gallery-section lct-section lct-bg-accent">
 
-  <section class="container-md lct-smaller lct-title-section">
+  <section class="container lct-smaller lct-title-section">
     <div class="row">
       <div class="col">
         <div class="lct-grid grid-4">
@@ -22,7 +22,7 @@
     <div class="row">
       <div class="col">
 
-        <div class="container-md lct-smaller p-5">
+        <div class="container lct-smaller p-5">
           <div class="row">
             <div class="col">
               <?php get_template_part('/template-parts/gallery', null, array(

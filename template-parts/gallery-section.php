@@ -18,7 +18,7 @@
     </div>
   </section>
 
-  <section class="gallery-section container-md bg-dark text-white p-0">
+  <section class="gallery-section container-md text-white p-0" style="background-color: #000000;">
     <div class="row no-gutters">
       <div class="col">
 

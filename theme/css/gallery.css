@@ -1,6 +1,8 @@
 .lct-filters button {
   background: none;
   border: none;
+  font-size: 1.8rem;
+  padding-bottom: .6em;
 }
 
 @media only screen and (min-width: 1023px) {

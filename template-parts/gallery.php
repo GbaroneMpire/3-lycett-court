@@ -14,7 +14,7 @@
 <div class="lct-gallery-grid lct-grid py-5 lct-gap-3">
 
   <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/theme/css/gallery.css">  
-  <script defer src="<?= get_template_directory() ?>/theme/js/gallery.js"></script>
+  <script defer src="<?= get_template_directory_uri() ?>/theme/js/gallery.js"></script>
 
   <?php if($filters): ?>
     <section class="lct-filters align-items-start d-flex flex-column lct-gap-2 p-4 p-lg-0">

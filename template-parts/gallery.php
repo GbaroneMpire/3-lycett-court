@@ -18,9 +18,9 @@
 
   <?php if($filters): ?>
     <section class="lct-filters align-items-start d-flex flex-column lct-gap-2 p-4 p-lg-0">
-      <button class="text-white text-uppercase" data-filter="*">All</button>
+      <button class=" lct-filter-button text-white text-uppercase lct-active" data-filter="*">All</button>
       <?php foreach($filters as $filter): ?>
-        <button class="text-white text-uppercase" class="lct-filter-button" data-filter=".<?= $filter['value'] ?>"><?= $filter['label'] ?></button>
+        <button class="lct-filter-button text-white text-uppercase" data-filter=".<?= $filter['value'] ?>"><?= $filter['label'] ?></button>
       <?php endforeach; ?>        
     </section>
   <?php endif; ?>
@@ -32,8 +32,7 @@
   <?php if($gallery_images): ?>
     <section class="lct-gallery position-relative">
       <div class="lct-inner d-flex flex-column">
-        <div class="lct-gallery-track lct-gap-3 lct-grid grid-2 w-100 lct-filterable">
-
+        <div class="lct-gallery-track lct-filterable">
           <div class="grid-sizer"></div>
 
           <?php foreach($gallery_images as $image): 
@@ -45,10 +44,11 @@
             
             ?>
 
-              <a href="<?= $image['sizes']['medium'] ?>" class="lct-gallery-image<?= $image_class ?>" itemprop="contentUrl" data-size-width="<?= $img['sizes']['large-width'] ?>" data-size-height="<?= $img['sizes']['large-height'] ?>">
+              <a href="<?= $image['sizes']['large'] ?>" class="lct-gallery-image<?= $image_class ?>" itemprop="contentUrl" data-size-width="<?= $image['sizes']['large-width'] ?>" data-size-height="<?= $image['sizes']['large-height'] ?>">
                 <figure>
-                  <?= wp_get_attachment_image( $image['ID'], null, null, array(
-                    'class' => 'lct-object-fit'
+                  <?= wp_get_attachment_image( $image['ID'], 'medium', null, array(
+                    'class' => 'lct-object-fit',
+                    'loading' => 'lazy'
                   )); ?>
                 </figure>
               </a>
@@ -60,9 +60,6 @@
     </section>
   <?php endif; ?>
 </div>
-
-<?php get_template_part('/template-parts/pswp_element'; ?>
-
 
 
 

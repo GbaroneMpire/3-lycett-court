@@ -5,15 +5,33 @@
       itemSelector: gridSelector,
       percentPosition: true,
       masonry: {
-        columnWidth: '.grid-sizer',
-        gutter: 5
+        columnWidth: '.grid-sizer'
       }
     }),
     buttonGroup = document.querySelector('.lct-filters'),
-    filterButtons = document.querySelectorAll('.lct-filter-button');
+    filterButtons = document.querySelectorAll('.lct-filter-button'),
+    getPswpItems = links => {
+      return [...links].reduce((items, link) => {
+
+        const sizes = {
+          width: link.getAttribute('data-size-width'),
+          height: link.getAttribute('data-size-height')
+        }
+        
+        items.push({
+          src: link.href,
+          w: parseInt(sizes.width),
+          h: parseInt(sizes.height)
+        });
+  
+        return items;
+  
+      }, []);
+    };
 
     let pswpSelector = gridSelector,
-        pswpLinks = [];
+        pswpLinks = document.querySelectorAll(pswpSelector),
+        pswpItems = getPswpItems(pswpLinks);
 
     function initIsotope() {
 
@@ -30,38 +48,19 @@
         target.classList.add('lct-active');
 
         pswpSelector = `${gridSelector}${currFilter}`;
-        pswpLinks = document.querySelector(pswpSelector);
+        pswpLinks = document.querySelectorAll(pswpSelector);
+        pswpItems = getPswpItems(pswpLinks);
   
       });
     }
 
     function PSWP() {
 
-      const 
-        pswpElement = document.querySelectorAll('.pswp')[0],
-        galleryLinks = document.querySelectorAll(pswpSelector),
-        pswpItems = galleryLinks.reduce((items, link) => {
-
-          const sizes = {
-            width: link.getAttribute('data-size-width'),
-            height: link.getAttribute('data-size-height')
-          }
-          
-          items.push({
-            src: link.href,
-            w: parseInt(sizes.width),
-            h: parseInt(sizes.height)
-          });
-    
-          return items;
-    
-        }, []);
-
-      pswpLinks = document.querySelectorAll(pswpSelector);
+      const pswpElement = document.querySelectorAll('.pswp')[0];
 
       function initPSWP(items, currIndex){
 
-        var options = {
+        const options = {
           index: currIndex, // start at first clicked slide
           getThumbBoundsFn: function(index) {
 
@@ -81,10 +80,10 @@
           }
         };
 
-          // Initializes and opens PhotoSwipe
-          var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+        // Initializes and opens PhotoSwipe
+        const gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
 
-          gallery.init();
+        gallery.init();
 
       }
         
@@ -92,8 +91,7 @@
 
         e.preventDefault();
 
-        var linkNodeList = [...document.querySelectorAll(pswpLinks)],
-            currIndex = linkNodeList.indexOf(this);
+        const currIndex = [...pswpLinks].indexOf(this);
 
         initPSWP(pswpItems, currIndex);
       }

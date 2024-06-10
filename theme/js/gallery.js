@@ -29,7 +29,9 @@
         target.classList.add('lct-active');
 
         pswpSelector = `${gridSelector}${currFilter}`;
-        pswpLinks = document.querySelector(pswpSelector);
+        pswpLinks = document.querySelectorAll(pswpSelector);
+
+        console.log(pswpLinks);
   
       });
     }

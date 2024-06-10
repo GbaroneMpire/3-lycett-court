@@ -94,7 +94,7 @@
         
         console.log(pswpLinks, pswpItems, currIndex);
 
-        initPSWP(pswpItems, currIndex);
+        //initPSWP(pswpItems, currIndex);
       }
 
       pswpLinks.forEach(function(link){

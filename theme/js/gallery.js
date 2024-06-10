@@ -38,24 +38,27 @@
 
     function PSWP() {
 
-      const pswpElement = document.querySelectorAll('.pswp')[0],
-            pswpItems = pswpLinks.reduce((items, link) => {
+      const 
+        pswpElement = document.querySelectorAll('.pswp')[0],
+        galleryLinks = document.querySelectorAll(pswpSelector),
+        pswpItems = [...galleryLinks].reduce((items, link) => {
 
-              const sizes = {
-                width: link.getAttribute('data-size-width'),
-                height: link.getAttribute('data-size-height')
-              }
-              
-              items.push({
-                src: link.href,
-                w: parseInt(sizes.width),
-                h: parseInt(sizes.height)
-              });
-        
-              return items;
-        
-            }, []);
+          const sizes = {
+            width: link.getAttribute('data-size-width'),
+            height: link.getAttribute('data-size-height')
+          }
+          
+          items.push({
+            src: link.href,
+            w: parseInt(sizes.width),
+            h: parseInt(sizes.height)
+          });
+    
+          return items;
+    
+        }, []);
 
+      pswpLinks = document.querySelectorAll(pswpSelector);
 
       function initPSWP(items, currIndex){
 
@@ -90,9 +93,10 @@
 
         e.preventDefault();
 
-        const currIndex = pswpLinks.indexOf(this);
-        
-        console.log(pswpLinks, pswpItems, currIndex);
+        var linkNodeList = [...pswpLinks],
+            currIndex = linkNodeList.indexOf(this);
+
+            console.log(pswpLinks, currIndex);
 
         initPSWP(pswpItems, currIndex);
       }

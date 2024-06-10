@@ -61,5 +61,7 @@
   <?php endif; ?>
 </div>
 
+<?php get_template_part('/template-parts/pswp_element'); ?>
+
 
 

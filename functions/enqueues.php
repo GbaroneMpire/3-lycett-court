@@ -27,6 +27,12 @@ function b4st_enqueues() {
 	wp_register_style('lct-flickity-style', 'https://unpkg.com/flickity@2/dist/flickity.min.css', false, '2.0.0', null);
 	wp_enqueue_style('lct-flickity-style');
 
+	wp_register_style('pswp-css', 'https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.css', array(), '4.1.3'); // Modernizr
+	wp_enqueue_style('pswp-css'); // Enqueue it!
+
+	wp_register_style('pswp-css-default', 'https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/default-skin/default-skin.css', array(), '4.1.3'); // Modernizr
+	wp_enqueue_style('pswp-css-default'); // Enqueue it!
+
 	// Scripts
 	wp_register_script('modernizr', 'https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js', false, '2.8.3', true);
 	wp_enqueue_script('modernizr');
@@ -42,6 +48,13 @@ function b4st_enqueues() {
 
 	wp_register_script('lct-isotope-js', 'https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js', false, '3.0.0', true);
 	wp_enqueue_script('lct-isotope-js');
+
+	wp_register_script('pswp-js', 'https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.js', false, '4.1.3', null);
+	wp_enqueue_script('pswp-js');
+	
+	wp_register_script('pswp-js-default', 'https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe-ui-default.min.js', false, '4.1.3', null);
+	wp_enqueue_script('pswp-js-default');
+
 
 	wp_register_script('b4st', get_template_directory_uri() . '/theme/js/b4st.js', false, null, true);
 	wp_enqueue_script('b4st');

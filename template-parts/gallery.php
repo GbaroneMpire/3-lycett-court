@@ -34,6 +34,7 @@
       <div class="lct-inner d-flex flex-column">
         <div class="lct-gallery-track lct-filterable">
           <div class="grid-sizer"></div>
+
           <?php foreach($gallery_images as $image): 
               $image_data = lct_get_image_data($image['ID']);
               $image_description = $image_data['description'];
@@ -42,17 +43,24 @@
               $image_class .= (!empty($image_description)) ? ' ' . $image_description : '';
             
             ?>
-              <figure class="lct-gallery-image<?= $image_class ?>">
-                <?= wp_get_attachment_image( $image['ID'], null, null, array(
-                  'class' => 'lct-object-fit'
-                )); ?>
-              </figure>
+
+              <a href="<?= $image['sizes']['medium'] ?>" class="lct-gallery-image<?= $image_class ?>" itemprop="contentUrl" data-size-width="<?= $img['sizes']['large-width'] ?>" data-size-height="<?= $img['sizes']['large-height'] ?>">
+                <figure>
+                  <?= wp_get_attachment_image( $image['ID'], null, null, array(
+                    'class' => 'lct-object-fit'
+                  )); ?>
+                </figure>
+              </a>
+
           <?php endforeach ?>
+
         </div>
       </div>
     </section>
   <?php endif; ?>
 </div>
+
+<?php get_template_part('/template-parts/pswp_element'; ?>
 
 
 

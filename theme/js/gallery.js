@@ -91,10 +91,10 @@
 
         e.preventDefault();
 
-        console.log(pswpLinks);
-
         var linkNodeList = [...pswpLinks],
             currIndex = linkNodeList.indexOf(this);
+
+            console.log(pswpLink, currIndex);
 
         initPSWP(pswpItems, currIndex);
       }

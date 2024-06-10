@@ -11,7 +11,7 @@
     buttonGroup = document.querySelector('.lct-filters'),
     filterButtons = document.querySelectorAll('.lct-filter-button'),
     getPswpItems = links => {
-      return links.reduce((items, link) => {
+      return [...links].reduce((items, link) => {
 
         const sizes = {
           width: link.getAttribute('data-size-width'),

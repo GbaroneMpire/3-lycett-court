@@ -91,6 +91,8 @@
 
         e.preventDefault();
 
+        console.log(pswpLinks);
+
         var linkNodeList = [...document.querySelectorAll(pswpLinks)],
             currIndex = linkNodeList.indexOf(this);
 

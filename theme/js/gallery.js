@@ -33,8 +33,6 @@
         pswpLinks = document.querySelectorAll(pswpSelector),
         pswpItems = getPswpItems(pswpLinks);
 
-    console.log('load', {pswpSelector, pswpLinks, pswpItems})
-
     function initIsotope() {
 
       buttonGroup.addEventListener('click', e => {
@@ -52,9 +50,6 @@
         pswpSelector = `${gridSelector}${currFilter}`;
         pswpLinks = document.querySelectorAll(pswpSelector);
         pswpItems = getPswpItems(pswpLinks);
-
-        
-        console.log('filter', {pswpSelector, pswpLinks, pswpItems});
   
       });
     }
@@ -97,8 +92,6 @@
         e.preventDefault();
 
         const currIndex = [...pswpLinks].indexOf(this);
-           
-        console.log('filter', {currIndex, pswpSelector, pswpLinks, pswpItems});
 
         initPSWP(pswpItems, currIndex);
       }

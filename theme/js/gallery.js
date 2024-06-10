@@ -39,7 +39,7 @@
       const 
         pswpElement = document.querySelectorAll('.pswp')[0],
         galleryLinks = document.querySelectorAll(pswpSelector),
-        pswpItems = galleryLinks.reduce((items, link) => {
+        pswpItems = [...galleryLinks].reduce((items, link) => {
 
           const sizes = {
             width: link.getAttribute('data-size-width'),

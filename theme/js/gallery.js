@@ -96,7 +96,7 @@
 
         e.preventDefault();
 
-        const currIndex = pswpLinks.indexOf(this);
+        const currIndex = [...pswpLinks].indexOf(this);
            
         console.log('filter', {currIndex, pswpSelector, pswpLinks, pswpItems});
 

@@ -38,27 +38,7 @@
 
     function PSWP() {
 
-      const 
-        pswpElement = document.querySelectorAll('.pswp')[0],
-        galleryLinks = document.querySelectorAll(pswpSelector),
-        pswpItems = [...galleryLinks].reduce((items, link) => {
-
-          const sizes = {
-            width: link.getAttribute('data-size-width'),
-            height: link.getAttribute('data-size-height')
-          }
-          
-          items.push({
-            src: link.href,
-            w: parseInt(sizes.width),
-            h: parseInt(sizes.height)
-          });
-    
-          return items;
-    
-        }, []);
-
-      pswpLinks = document.querySelectorAll(pswpSelector);
+      const pswpElement = document.querySelectorAll('.pswp')[0];
 
       function initPSWP(items, currIndex){
 
@@ -94,9 +74,25 @@
         e.preventDefault();
 
         var linkNodeList = [...pswpLinks],
-            currIndex = linkNodeList.indexOf(this);
+            currIndex = linkNodeList.indexOf(this),
+            pswpItems = linkNodeList.reduce((items, link) => {
 
-            console.log(pswpItems, currIndex);
+              const sizes = {
+                width: link.getAttribute('data-size-width'),
+                height: link.getAttribute('data-size-height')
+              }
+              
+              items.push({
+                src: link.href,
+                w: parseInt(sizes.width),
+                h: parseInt(sizes.height)
+              });
+        
+              return items;
+        
+            }, []);
+
+        console.log(pswpLinks, pswpItems, currIndex);
 
         initPSWP(pswpItems, currIndex);
       }

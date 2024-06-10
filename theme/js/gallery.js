@@ -9,10 +9,31 @@
       }
     }),
     buttonGroup = document.querySelector('.lct-filters'),
-    filterButtons = document.querySelectorAll('.lct-filter-button');
+    filterButtons = document.querySelectorAll('.lct-filter-button'),
+    getPswpItems = links => {
+      return links.reduce((items, link) => {
+
+        const sizes = {
+          width: link.getAttribute('data-size-width'),
+          height: link.getAttribute('data-size-height')
+        }
+        
+        items.push({
+          src: link.href,
+          w: parseInt(sizes.width),
+          h: parseInt(sizes.height)
+        });
+  
+        return items;
+  
+      }, []);
+    }
 
     let pswpSelector = gridSelector,
-        pswpLinks = [];
+        pswpLinks = document.querySelectorAll(pswpSelector),
+        pswpItems = getPswpItems(pswpLinks);
+
+    console.log('load', {pswpSelector, pswpLinks, pswpItems})
 
     function initIsotope() {
 
@@ -30,39 +51,21 @@
 
         pswpSelector = `${gridSelector}${currFilter}`;
         pswpLinks = document.querySelectorAll(pswpSelector);
+        pswpItems = getPswpItems(pswpLinks);
 
-        console.log(pswpLinks);
+        
+        console.log('filter', {pswpSelector, pswpLinks, pswpItems});
   
       });
     }
 
     function PSWP() {
 
-      const 
-        pswpElement = document.querySelectorAll('.pswp')[0],
-        galleryLinks = document.querySelectorAll(pswpSelector),
-        pswpItems = [...galleryLinks].reduce((items, link) => {
-
-          const sizes = {
-            width: link.getAttribute('data-size-width'),
-            height: link.getAttribute('data-size-height')
-          }
-          
-          items.push({
-            src: link.href,
-            w: parseInt(sizes.width),
-            h: parseInt(sizes.height)
-          });
-    
-          return items;
-    
-        }, []);
-
-      pswpLinks = document.querySelectorAll(pswpSelector);
+      const pswpElement = document.querySelectorAll('.pswp')[0];
 
       function initPSWP(items, currIndex){
 
-        var options = {
+        const options = {
           index: currIndex, // start at first clicked slide
           getThumbBoundsFn: function(index) {
 
@@ -82,10 +85,10 @@
           }
         };
 
-          // Initializes and opens PhotoSwipe
-          var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+        // Initializes and opens PhotoSwipe
+        const gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
 
-          gallery.init();
+        gallery.init();
 
       }
         
@@ -93,12 +96,11 @@
 
         e.preventDefault();
 
-        var linkNodeList = [...pswpLinks],
-            currIndex = linkNodeList.indexOf(this);
+        const currIndex = pswpLinks.indexOf(this);
+           
+        console.log('filter', {currIndex, pswpSelector, pswpLinks, pswpItems});
 
-            console.log(pswpLinks, currIndex);
-
-        initPSWP(pswpItems, currIndex);
+       // initPSWP(pswpItems, currIndex);
       }
 
       pswpLinks.forEach(function(link){

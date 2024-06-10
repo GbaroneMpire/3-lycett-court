@@ -94,7 +94,7 @@
         var linkNodeList = [...pswpLinks],
             currIndex = linkNodeList.indexOf(this);
 
-            console.log(pswpLink, currIndex);
+            console.log(pswpItems, currIndex);
 
         initPSWP(pswpItems, currIndex);
       }

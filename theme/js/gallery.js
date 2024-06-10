@@ -93,7 +93,7 @@
 
         console.log(pswpLinks);
 
-        var linkNodeList = [...document.querySelectorAll(pswpLinks)],
+        var linkNodeList = [...pswpLinks],
             currIndex = linkNodeList.indexOf(this);
 
         initPSWP(pswpItems, currIndex);

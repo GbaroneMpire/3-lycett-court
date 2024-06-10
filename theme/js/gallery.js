@@ -90,9 +90,11 @@
 
         e.preventDefault();
 
-        console.log(this);
+        const currIndex = pswpLinks.indexOf(this);
+        
+        console.log(pswpLinks, pswpItems, currIndex);
 
-        //initPSWP(pswpItems, currIndex);
+        initPSWP(pswpItems, currIndex);
       }
 
       pswpLinks.forEach(function(link){

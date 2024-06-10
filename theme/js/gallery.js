@@ -27,7 +27,7 @@
         return items;
   
       }, []);
-    }
+    };
 
     let pswpSelector = gridSelector,
         pswpLinks = document.querySelectorAll(pswpSelector),

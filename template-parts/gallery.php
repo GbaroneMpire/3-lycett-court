@@ -44,10 +44,11 @@
             
             ?>
 
-              <a href="<?= $image['sizes']['medium'] ?>" class="lct-gallery-image<?= $image_class ?>" itemprop="contentUrl" data-size-width="<?= $image['sizes']['large-width'] ?>" data-size-height="<?= $image['sizes']['large-height'] ?>">
+              <a href="<?= $image['sizes']['large'] ?>" class="lct-gallery-image<?= $image_class ?>" itemprop="contentUrl" data-size-width="<?= $image['sizes']['large-width'] ?>" data-size-height="<?= $image['sizes']['large-height'] ?>">
                 <figure>
-                  <?= wp_get_attachment_image( $image['ID'], null, null, array(
-                    'class' => 'lct-object-fit'
+                  <?= wp_get_attachment_image( $image['ID'], 'medium', null, array(
+                    'class' => 'lct-object-fit',
+                    'loading' => 'lazy'
                   )); ?>
                 </figure>
               </a>

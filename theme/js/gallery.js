@@ -100,7 +100,7 @@
            
         console.log('filter', {currIndex, pswpSelector, pswpLinks, pswpItems});
 
-       // initPSWP(pswpItems, currIndex);
+        initPSWP(pswpItems, currIndex);
       }
 
       pswpLinks.forEach(function(link){

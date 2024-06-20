@@ -19,7 +19,7 @@
         </div>
 
         <div class="col-sm">
-          <p class="text-center text-sm-right"><a href="https://github.com/SimonPadbury/b4st">b4st</a> theme for WordPress</p>
+          <p class="text-center text-sm-right">Designed & Developed by <a href="https://mpirecreative.com"><span clsss="mpire-m">M</span>pire Creative</a></p>
         </div>
         
     </div>

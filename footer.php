@@ -19,7 +19,7 @@
         </div>
 
         <div class="col-sm">
-          <p class="text-center text-sm-right">Designed & Developed by <a href="https://mpirecreative.com"><span clsss="mpire-m">M</span>pire Creative</a></p>
+          <p class="text-center text-sm-right">Designed & Developed by <a href="https://mpirecreative.com"><span class="mpire-m">M</span>pire Creative</a></p>
         </div>
         
     </div>

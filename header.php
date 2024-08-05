@@ -8,6 +8,7 @@
 
   <style>
     :root {
+      --lct-header-height: 80px;
       --lct-html-scale: 62.5%;
       --lct-font-family: 'Poppins', sans-serif;
       --lct-font-size-body: 1.6rem;
@@ -24,7 +25,7 @@
 
 <?php b4st_navbar_before();?>
 
-<nav id="navbar" class="navbar navbar-expand-md navbar-light bg-light">
+<nav id="navbar" class="navbar navbar-expand-md navbar-light">
   <div class="container">
 
     <?php b4st_navbar_brand(); ?>
@@ -37,7 +38,7 @@
 
       <?php b4st_nav(); ?>
 
-      <?php b4st_navbar_search();?>    
+      <?php //b4st_navbar_search();?>    
       
     </div>
 

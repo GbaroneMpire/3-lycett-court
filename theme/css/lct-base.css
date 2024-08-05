@@ -96,6 +96,15 @@ p {
   padding: 5% 0 6%;
 }
 
+/* HEADER */
+a.navbar-brand {
+  max-width: 190px;
+}
+
+nav#navbar {
+  height: var(--lct-header-height);
+}
+
 /* FOOTER */
 footer {
   background-color: #222222 !important;

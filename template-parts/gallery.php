@@ -44,7 +44,7 @@
             
             ?>
 
-              <a href="<?= $image['sizes']['large'] ?>" class="lct-gallery-image<?= $image_class ?>" itemprop="contentUrl" data-size-width="<?= $image['sizes']['large-width'] ?>" data-size-height="<?= $image['sizes']['large-height'] ?>">
+              <a href="<?= $image['sizes']['large'] ?>" class="lct-gallery-image<?= $image_class ?>" itemprop="contentUrl" data-size-width="<?= $image['sizes']['large-width'] ?>" data-size-height="<?= $image['sizes']['large-height'] ?>" data-caption="<?= $image['caption']; ?>">
                 <figure>
                   <?= wp_get_attachment_image( $image['ID'], 'medium', null, array(
                     'class' => 'lct-object-fit',

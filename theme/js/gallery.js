@@ -21,7 +21,8 @@
         items.push({
           src: link.href,
           w: parseInt(sizes.width),
-          h: parseInt(sizes.height)
+          h: parseInt(sizes.height),
+          title: link.getAttribute('data-caption')
         });
   
         return items;

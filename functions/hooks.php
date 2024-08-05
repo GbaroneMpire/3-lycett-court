@@ -17,7 +17,9 @@ function b4st_navbar_after() {
 function b4st_navbar_brand() {
   if ( ! has_action('navbar_brand') ) {
     ?>
-    <a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><?php bloginfo('name'); ?></a>
+    <a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>">
+      <?= wp_get_attachment_image(263, null, false); ?>
+    </a>
     <?php
   } else {
 		do_action('navbar_brand');

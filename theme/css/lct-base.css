@@ -108,6 +108,7 @@ a.navbar-brand {
 
 #navbar a {
   color: black;
+  padding: 1em;
 }
 
 /* FOOTER */

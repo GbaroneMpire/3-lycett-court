@@ -37,7 +37,7 @@
           justify-content: center;
 }
 
-.lct-hero__text-container::before {
+/* .lct-hero__text-container::before {
   content: '';
   position: absolute;
   top: 0;
@@ -48,5 +48,5 @@
           clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
   background: rgba(0,0,0,.85);
   width: max(40%, 20em)
-}
+} */
 
